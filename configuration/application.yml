@@ -1,3 +1,14 @@
 errors_guidelines:
-  definitions_name: '[ { "code": "E-GUID003", "type": "pattern", "validator": "^([A-Z][a-z]+)*$", "description": "Error in definition name (%s), must be in "UpperCamelCase." } ]'
-
+  swagger_version": '[ { "code": "E-GUID014", "type": "function", "validator": "const versionSplit = metadata ? metadata.split(".") : metadata; return Array.isArray(versionSplit) ? versionSplit[0] === "2" : false;", "description": "The swagger version used is 2.0." } ]'
+  base_path": "[]"
+  definitions_name": '[ { "code": "E-GUID003", "type": "pattern", "validator": "^([A-Z][a-z]+)*$", "description": "Error in definition name (%s), must be in UpperCamelCase. } ]'
+  host: "[]"
+  info_contact_mail: "[]"
+  info_description: "[]"
+  info_title": "[]"
+  info_version": '[{ code": "E-GUID007", "type": "pattern", "validator": "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$", "description": "Error in info version: (%s). Must be like v3.2.15" } ]'
+  tag_name: "[]"
+  tag_description: "[]"
+  path_parameters: '[ { "code": "E-GUID002", "type": "pattern", "validator": "^([a-z][a-z]*)(-[a-z]+)*$", "description": "Error in path param (%s) must be in <<kebab-case>>, in the path string <<%s>>." },
+                      { "code": "E-GUID006", "type": "function", "validator": "function isEven(num) { return true; }", "description": "Template description error for functions." } ]'
+  query_params: '[ { "code": "E-GUID004", "validator": "^([a-z][a-z]*)(_[a-z]+)*$", "description": "Error in query param (%s) must be in <<snake_case>>, in the path string <<%s.>>" } ]'
