@@ -4,6 +4,10 @@ errors:
       type: function
       validator: "const versionSplit = metadata ? metadata.split('.') : metadata; return Array.isArray(versionSplit) ? versionSplit[0] === ''2'' : false;"
       description: "The swagger version used is 2.0."
+    - code: E-GUID032
+      type: function
+      validator: "const versionSplit = metadata ? metadata.split('.') : metadata; return Array.isArray(versionSplit) ? versionSplit[0] === ''2'' : false;"
+      description: "The swagger version used is 2.0."
   base_path:
     - code: E-GUID009
       type: pattern
