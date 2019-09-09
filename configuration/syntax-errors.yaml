@@ -1,9 +1,5 @@
-- definitions_name:
-  - code: E-GUID003
-    type: pattern
-    validator: "^([A-Z][a-z]+)*$"
-    description: Error in definition name (%s), must be in 'UpperCamelCase'.
-  - code: E-GUID001
-    type: pattern
-    validator: "^([A-Z][$"
-    description: Error in definierCamelCase'.
+definitions_name:
+  code: E-GUID003
+  type: pattern
+  validator: "^([A-Z][a-z]+)*$"
+  description: Error in definition name (%s), must be in 'UpperCamelCase'.
