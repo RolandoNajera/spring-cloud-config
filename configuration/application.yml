@@ -1,5 +1,5 @@
 errors_guidelines:
-  swagger_version": '[ { "code": "E-GUID014", "type": "function", "validator": "const versionSplit = metadata ? metadata.split(".") : metadata; return Array.isArray(versionSplit) ? versionSplit[0] === "2" : false;", "description": "The swagger version used is 2.0." } ]'
+  swagger_version: '[ { "code": "E-GUID014", "type": "function", "validator": "const versionSplit = metadata ? metadata.split(".") : metadata; return Array.isArray(versionSplit) ? versionSplit[0] === "2" : false;", "description": "The swagger version used is 2.0." } ]'
   base_path": "[]"
   definitions_name": '[ { "code": "E-GUID003", "type": "pattern", "validator": "^([A-Z][a-z]+)*$", "description": "Error in definition name (%s), must be in UpperCamelCase. } ]'
   host: "[]"
