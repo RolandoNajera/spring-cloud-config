@@ -4,3 +4,39 @@ errors:
       type: function
       validator: "const versionSplit = metadata ? metadata.split('.') : metadata; return Array.isArray(versionSplit) ? versionSplit[0] === ''2'' : false;"
       description: "The swagger version used is 2.0."
+  base_path:
+    - code: E-GUID009
+      type: pattern
+      validator: "^/v[0-9]+$"
+      description: "Error in basePath (%s). Must be 'v#'."
+  definitions_name:
+    - code: E-GUID003
+      type: pattern
+      validator: "^([A-Z][a-z]+)*$"
+      description: "Error in definition name (%s), must be in 'UpperCamelCase'."
+  properties_name:
+    - code: E-GUID008
+      type: pattern
+      validator: "^([a-z][a-z]*)(_[a-z]+)*$"
+      description: "Error in properties name (%s) must be in 'snake_case'."
+  info_contact_mail:
+  info_description:
+  info_title:
+  info_version:
+    - code: E-GUID007
+      type: pattern
+      validator: "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+      description: "Error in info version: (%s). Must be like 3.2.15"
+  tag_name:
+  tag_description:
+  path_parameters:
+    - code: E-GUID002
+      type: pattern
+      validator: "^([a-z][a-z]*)(-[a-z]+)*$"
+      description: "Error in path param (%s) must be in 'kebab-case', in the path string '%s'."
+  query_params:
+    - code: E-GUID004
+      type: pattern
+      validator: "^([a-z][a-z]*)(_[a-z]+)*$"
+      description: "Error in query param (%s) must be in 'snake_case'."
+
