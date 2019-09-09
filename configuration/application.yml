@@ -1,6 +1,6 @@
 errors:
-  - swagger_version:
-      code: E-GUID014
+  swagger_version:
+    - code: E-GUID014
       type: function
       validator: "const versionSplit = metadata ? metadata.split('.') : metadata; return Array.isArray(versionSplit) ? versionSplit[0] === ''2'' : false;"
       description: "The swagger version used is 2.0."
